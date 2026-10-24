@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sparkle | Jewellery Collection</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="top-perks">
+      <span><i class="fa-solid fa-truck-fast"></i> Free Shipping on Orders Above ₹999</span>
+      <span><i class="fa-solid fa-rotate"></i> Easy Returns Within 7 Days</span>
+      <span><i class="fa-solid fa-shield-heart"></i> Certified Jewellery</span>
+    </div>
+    <div class="socials"><span>Follow Us:</span><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-youtube"></i><b></b><span><i class="fa-solid fa-phone"></i> +91 9844873511</span></div>
+  </div>
+
+  <header class="main-header">
+    <a class="brand" href="#"><span>Sparkle<span class="sparkle-mark">✦</span></span><small>JEWELLERY FOR EVERY YOU</small></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a><a href="#" class="active">Shop</a><a href="#">Rings</a><a href="#">Earrings</a><a href="#">Necklaces</a><a href="#">Bracelets</a><a href="#">Mangalsutra</a><a href="#">Sets</a><a href="#">About</a><a href="#">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="searchInput" type="search" placeholder="Search for jewellery..." /></label>
+      <button class="icon-btn wishlist-head" title="Wishlist"><i class="fa-regular fa-heart"></i><span id="wishlistCount">0</span></button>
+      <button class="icon-btn" title="Cart" id="cartButton"><i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span></button>
+      <button class="icon-btn user-btn" title="Account"><i class="fa-regular fa-user"></i></button>
+    </div>
+  </header>
+
+  <section class="hero-banner" aria-label="Shop our collection">
+    <!-- Replace the CSS background image in style.css with your banner image URL. -->
+    <div class="hero-copy"><h1>Shop Our Collection</h1><p>Elegant Designs for Every Occasion</p></div>
+    <div class="hero-note">Because<br>You Deserve<br>to Shine <span>♡</span></div>
+  </section>
+
+  <main class="shop-layout">
+    <aside class="sidebar">
+      <section class="filter-section">
+        <button class="filter-heading" data-toggle="categories"><span>Categories</span><i class="fa-solid fa-chevron-up"></i></button>
+        <div class="filter-content" id="categories">
+          <label><input type="checkbox" class="category-filter" value="Rings"> Rings <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Earrings"> Earrings <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Necklaces & Pendants"> Necklaces <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Bangles"> Bangles <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Mangalsutra"> Mangalsutra <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Jewellery Sets"> Jewellery Sets <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Anklets & payal"> Anklets & Payal <em>(4)</em></label>
+          <label><input type="checkbox" class="category-filter" value="Bridal Jewellery"> Bridal Jewellery <em>(4)</em></label>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <button class="filter-heading" data-toggle="price"><span>Price Range</span><i class="fa-solid fa-chevron-up"></i></button>
+        <div class="filter-content" id="price">
+          <input id="priceRange" class="price-range" type="range" min="0" max="3500000" step="1000" value="3500000">
+          <div class="price-labels"><span>₹0</span><span id="maxPriceLabel">₹35,00,000</span></div>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <button class="filter-heading" data-toggle="materials"><span>Material</span><i class="fa-solid fa-chevron-up"></i></button>
+        <div class="filter-content" id="materials">
+          <label><input type="checkbox" class="material-filter" value="Gold Plated"> Gold Plated</label>
+          <label><input type="checkbox" class="material-filter" value="Silver Plated"> Silver Plated</label>
+          <label><input type="checkbox" class="material-filter" value="Rose Gold"> Rose Gold</label>
+          <label><input type="checkbox" class="material-filter" value="Artificial Diamond"> Artificial Diamond</label>
+          <label><input type="checkbox" class="material-filter" value="Pearl"> Pearl</label>
+          <label><input type="checkbox" class="material-filter" value="Kundan"> Kundan</label>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <button class="filter-heading" data-toggle="ratings"><span>Rating</span><i class="fa-solid fa-chevron-up"></i></button>
+        <div class="filter-content rating-filters" id="ratings">
+          <label><input type="checkbox" class="rating-filter" value="4.5"><span class="stars">★★★★★</span> <em>(4)</em></label>
+          <label><input type="checkbox" class="rating-filter" value="4"><span class="stars">★★★★</span> <em>(12)</em></label>
+          <label><input type="checkbox" class="rating-filter" value="3.5"><span class="stars">★★★</span> <em>(10)</em></label>
+          <label><input type="checkbox" class="rating-filter" value="3"><span class="stars">★★</span> <em>(4)</em></label>
+          <label><input type="checkbox" class="rating-filter" value="2"><span class="stars">★</span> <em>(2)</em></label>
+        </div>
+      </section>
+
+      <a href="#" class="sidebar-promo" id="promoLink">
+        <!-- Add your New Arrivals promotional image URL in style.css (.sidebar-promo). -->
+        <div><h2>New<br>Arrivals</h2><p>Traditional Touch<br>Modern You</p><span>Explore Now <i class="fa-solid fa-arrow-right"></i></span></div>
+      </a>
+      <button class="clear-filters" id="clearFilters">Clear all filters</button>
+    </aside>
+
+    <section class="products-area">
+      <div class="breadcrumbs">Home <i class="fa-solid fa-chevron-right"></i> Shop</div>
+      <div class="listing-head">
+        <div><h2>All Jewellery</h2><p>Discover our exclusive collection of timeless jewellery pieces.</p></div>
+        <div class="listing-tools"><span id="resultCount">Showing 1–8 of 32 products</span><label>Sort By: <select id="sortSelect"><option value="popular">Popularity</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Top Rated</option><option value="newest">Newest</option></select></label><button class="view-toggle active" id="gridView" title="Grid view"><i class="fa-solid fa-border-all"></i></button><button class="view-toggle" id="listView" title="List view"><i class="fa-solid fa-list"></i></button></div>
+      </div>
+      <div id="activeFilters" class="active-filters"></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><i class="fa-regular fa-face-frown"></i><h3>No jewellery found</h3><p>Try changing your search or filters.</p><button id="emptyClear">Clear filters</button></div>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="quick-modal"><button class="modal-close" id="closeModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button><div class="modal-image image-placeholder" id="modalImage"><span>Add product image URL in script.js</span></div><div class="modal-info"><span class="eyebrow">SPARKLE COLLECTION</span><h2 id="modalTitle">Product name</h2><p id="modalCategory"></p><div class="modal-rating" id="modalRating"></div><div class="modal-price" id="modalPrice"></div><p class="modal-description">A timeless piece designed to add a little sparkle to every special moment. Beautifully finished and perfect for gifting.</p><button class="primary-btn" id="modalAdd"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button></div></div>
+  </div>
+
+  <footer><a class="brand footer-brand" href="#"><span>Sparkle<span class="sparkle-mark">✦</span></span><small>JEWELLERY FOR EVERY YOU</small></a><p>Made to sparkle. Designed for you.</p><span>© 2026 Sparkle Jewellery</span></footer>
+  <script src="products-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

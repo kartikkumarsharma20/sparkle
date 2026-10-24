@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Sparkle Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product-detail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="top-perks">
+      <span><i class="fa-solid fa-truck-fast"></i> Free Shipping on Orders Above ₹999</span>
+      <span><i class="fa-solid fa-rotate"></i> Easy Returns Within 7 Days</span>
+      <span><i class="fa-solid fa-shield-heart"></i> Certified Jewellery</span>
+    </div>
+    <div class="socials"><span>Follow Us:</span><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-youtube"></i><b></b><span><i class="fa-solid fa-phone"></i> +91 9844873511</span></div>
+  </div>
+  <header class="main-header">
+    <a class="brand" href="index.html"><span>Sparkle<span class="sparkle-mark">✦</span></span><small>JEWELLERY FOR EVERY YOU</small></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="index.html" class="active">Shop</a><a href="index.html">Rings</a><a href="index.html">Earrings</a><a href="index.html">Necklaces</a><a href="index.html">Bracelets</a><a href="index.html">Mangalsutra</a><a href="index.html">Sets</a><a href="#">About</a><a href="#">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="detailSearch" type="search" placeholder="Search for jewellery..."></label>
+      <a class="icon-btn" href="index.html" title="Wishlist"><i class="fa-regular fa-heart"></i></a>
+      <a class="icon-btn" href="index.html" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+      <button class="icon-btn user-btn" title="Account"><i class="fa-regular fa-user"></i></button>
+    </div>
+  </header>
+
+  <main class="detail-page">
+    <div class="detail-breadcrumbs"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a id="crumbCategory" href="index.html">Jewellery</a><i class="fa-solid fa-chevron-right"></i><strong id="crumbName">Product</strong></div>
+    <section class="product-main">
+      <div class="gallery">
+        <div class="thumb-column" id="thumbColumn"></div>
+        <div class="main-product-image" id="mainProductImage">
+          <button class="gallery-arrow prev" id="prevImage" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="gallery-arrow next" id="nextImage" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+          <button class="gallery-heart" id="detailWishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="gallery-perks">
+          <span><i class="fa-regular fa-gem"></i><b>Premium</b><small>Quality</small></span>
+          <span><i class="fa-solid fa-truck-fast"></i><b>Free Shipping</b><small>Above ₹999</small></span>
+          <span><i class="fa-solid fa-arrow-rotate-left"></i><b>Easy Returns</b><small>Within 7 Days</small></span>
+          <span><i class="fa-solid fa-shield-halved"></i><b>100% Secure</b><small>Payments</small></span>
+        </div>
+      </div>
+
+      <section class="detail-info">
+        <span class="detail-badge" id="detailBadge">Featured</span>
+        <h1 id="productName">Jewellery Product</h1>
+        <div class="detail-rating"><span class="detail-stars" id="productStars">★★★★★</span><span id="productRating">4.5</span><span id="reviewCount">(0 reviews)</span><i></i><button id="detailWishlistText"><i class="fa-regular fa-heart"></i> Add to Wishlist</button></div>
+        <div class="detail-price"><strong id="productPrice">₹0</strong><del id="originalPrice"></del><span id="detailDiscount"></span></div>
+        <p class="detail-description" id="productDescription"></p>
+        <div class="spec-strip">
+          <div><i class="fa-solid fa-ring"></i><span><b>Category</b><small id="specCategory">Jewellery</small></span></div>
+          <div><i class="fa-regular fa-gem"></i><span><b>Collection</b><small id="specCollection">Sparkle</small></span></div>
+          <div><i class="fa-solid fa-ruler"></i><span><b>Size</b><small>See size options</small></span></div>
+          <div><i class="fa-solid fa-box"></i><span><b>Packaging</b><small>Gift-ready box</small></span></div>
+        </div>
+        <div class="quantity-row"><b>Quantity:</b><div class="quantity-control"><button id="qtyMinus" aria-label="Decrease quantity">−</button><span id="quantity">1</span><button id="qtyPlus" aria-label="Increase quantity">+</button></div><button class="size-guide" id="sizeGuide"><i class="fa-solid fa-ruler-horizontal"></i> Size Guide</button></div>
+        <div class="buy-actions"><button class="detail-add" id="addToCart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button><button class="buy-now" id="buyNow"><i class="fa-solid fa-bolt"></i> Buy Now</button></div>
+        <div class="detail-trust">
+          <div><span class="trust-icon"><i class="fa-solid fa-shield-halved"></i></span><span><b>Certified Jewellery</b><small>100% Authentic</small></span></div>
+          <div><span class="trust-icon"><i class="fa-solid fa-award"></i></span><span><b>6 Months Warranty</b><small>On Plating & Stones</small></span></div>
+          <div><span class="trust-icon"><i class="fa-solid fa-rotate-left"></i></span><span><b>Easy Returns</b><small>Within 7 Days</small></span></div>
+          <div><span class="trust-icon"><i class="fa-solid fa-box-open"></i></span><span><b>Secure Payments</b><small>100% Safe & Trusted</small></span></div>
+        </div>
+        <a class="gift-panel" href="#description"><div><i class="fa-solid fa-gift"></i><span><b>Gift this Jewellery</b><small>Make it special with our premium gift packaging.</small></span><i class="fa-solid fa-chevron-right"></i></div><div class="gift-art"><span>Made with love ♡</span><i class="fa-solid fa-gift"></i></div></a>
+      </section>
+    </section>
+
+    <section class="detail-lower">
+      <div class="product-tabs">
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="description">Description</button>
+          <button class="tab-button" data-tab="information">Additional Information</button>
+          <button class="tab-button" data-tab="reviews">Reviews (<span id="tabReviews">0</span>)</button>
+          <button class="tab-button" data-tab="care">Care Guide</button>
+          <button class="tab-button" data-tab="shipping">Shipping & Returns</button>
+        </div>
+        <div class="tab-panel active" id="tab-description"><p id="longDescription"></p><ul><li>Elegant design for special moments and everyday styling</li><li>Carefully selected finish and detailing</li><li>Store in a jewellery box after use</li><li>A thoughtful gifting option</li></ul></div>
+        <div class="tab-panel" id="tab-information"><p id="informationText"></p><dl><dt>Product category</dt><dd id="infoCategory"></dd><dt>Product ID</dt><dd id="infoId"></dd><dt>Listed price</dt><dd id="infoPrice"></dd></dl></div>
+        <div class="tab-panel" id="tab-reviews"><p class="review-summary"><b id="reviewAverage">4.5</b> out of 5 <span class="detail-stars">★★★★★</span></p><p id="reviewMessage">Customer reviews will be displayed here when available.</p></div>
+        <div class="tab-panel" id="tab-care"><p>Keep jewellery away from perfumes, lotions, moisture and household chemicals. Wipe gently with a soft, dry cloth after wearing. Store separately in a clean, dry jewellery box to reduce scratches and tangling.</p></div>
+        <div class="tab-panel" id="tab-shipping"><p>Shipping and delivery timelines depend on your location. Returns are subject to the store's return policy and product condition. Please keep the original packaging and contact customer support before returning an item.</p></div>
+      </div>
+      <aside class="detail-extra-image" id="extraImage"><div><i class="fa-regular fa-gem"></i><span>SPARKLE</span></div></aside>
+      <section class="recommendations">
+        <div class="recommend-head"><h2>You May Also Like</h2><a href="index.html">View All <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="recommend-grid" id="recommendGrid"></div>
+      </section>
+    </section>
+  </main>
+  <div class="detail-toast" id="detailToast" role="status"></div>
+  <div class="mini-modal" id="sizeModal"><div><button id="closeSizeModal" aria-label="Close">×</button><h3>Size Guide</h3><p>Jewellery sizes can vary by design. Please check the product's sizing details with the seller before placing your order.</p><button class="detail-add" id="okSize">Got it</button></div></div>
+  <footer><a class="brand footer-brand" href="index.html"><span>Sparkle<span class="sparkle-mark">✦</span></span><small>JEWELLERY FOR EVERY YOU</small></a><p>Made to sparkle. Designed for you.</p><span>© 2026 Sparkle Jewellery</span></footer>
+  <script src="products-data.js"></script>
+  <script src="product-detail.js"></script>
+</body>
+</html>
